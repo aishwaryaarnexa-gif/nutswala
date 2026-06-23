@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutswala – Premium Dry Fruits & Nuts | Dev Enterprises, Navi Mumbai</title>
+  <meta name="description" content="Nutswala by Dev Enterprises — premium quality dry fruits and nuts. Almonds, pistachios, raisins, dates and mixed nuts at APMC Market, Vashi, Navi Mumbai." />
+  <meta name="keywords" content="dry fruits, nuts, almonds, pistachios, raisins, dates, nutmix, trail mix, Navi Mumbai, Vashi, APMC market" />
+  <meta property="og:title" content="Nutswala – Premium Dry Fruits & Nuts | Navi Mumbai" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">🥜</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <span class="loader-text">Nutswala</span>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="announce-bar" id="announceBar">
+    <div class="announce-inner">
+      <span>🥜 &nbsp;Premium Quality Dry Fruits from APMC Market, Vashi &nbsp;|&nbsp; Wholesale & Retail &nbsp;|&nbsp; Pan India Delivery</span>
+      <div class="announce-contact">
+        <a href="tel:+919820000000"><i class="fas fa-phone-alt"></i> +91 98200 00000</a>
+        <a href="https://wa.me/919820000000" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a href="#home" class="nav-logo" id="navLogo">
+        <img src="images/nutswala_logo.png" alt="Nutswala Logo" class="logo-img" />
+        <div class="logo-text-wrap">
+          <span class="logo-name">Nutswala</span>
+          <span class="logo-tagline">Dev Enterprises</span>
+        </div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-item active">Home</a></li>
+        <li><a href="#story" class="nav-item">Our Story</a></li>
+        <li><a href="#categories" class="nav-item">Categories</a></li>
+        <li><a href="#products" class="nav-item">Products</a></li>
+        <li><a href="#why" class="nav-item">Why Us</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://wa.me/919820000000" class="nav-wa" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════
+       HERO
+  ═══════════════════════════════════ -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-bg-img"></div>
+    <div class="hero-grain"></div>
+
+    <div class="hero-layout">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Est. since 2009 &nbsp;·&nbsp; APMC Market, Vashi
+        </div>
+        <h1 class="hero-heading">
+          <span class="hero-line line-italic">Nature's</span>
+          <span class="hero-line line-bold">FINEST</span>
+          <span class="hero-line line-italic line-gold">Dry Fruits</span>
+          <span class="hero-line line-bold">&amp; NUTS</span>
+        </h1>
+        <p class="hero-para">
+          Sourced from the world's finest farms. Delivered to your doorstep 
+          with the trust of Dev Enterprises — Navi Mumbai's premium dry fruit wholesaler.
+        </p>
+        <div class="hero-btns">
+          <a href="#products" class="btn-gold">
+            <span>Explore Products</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-ghost">Get Wholesale Price</a>
+        </div>
+        <div class="hero-pills">
+          <span class="pill"><i class="fas fa-leaf"></i> 100% Natural</span>
+          <span class="pill"><i class="fas fa-award"></i> FSSAI Certified</span>
+          <span class="pill"><i class="fas fa-truck"></i> Pan India Delivery</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-showcase">
+          <div class="showcase-ring ring-outer"></div>
+          <div class="showcase-ring ring-mid"></div>
+          <img src="images/hero_banner.png" alt="Premium Dry Fruits" class="showcase-img" />
+          <div class="showcase-badge badge-tl">
+            <i class="fas fa-star"></i>
+            <div><strong>500+</strong><span>Clients</span></div>
+          </div>
+          <div class="showcase-badge badge-br">
+            <i class="fas fa-box-open"></i>
+            <div><strong>50+</strong><span>Products</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       TICKER
+  ═══════════════════════════════════ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <div class="ticker-item"><span>California Almonds</span></div>
+      <div class="ticker-item"><i class="fas fa-nut"></i></div>
+      <div class="ticker-item"><span>Healthy Nutmix</span></div>
+      <div class="ticker-item"><i class="fas fa-seedling"></i></div>
+      <div class="ticker-item"><span>Black Raisins</span></div>
+      <div class="ticker-item"><i class="fas fa-nut"></i></div>
+      <div class="ticker-item"><span>California Pistachios</span></div>
+      <div class="ticker-item"><i class="fas fa-seedling"></i></div>
+      <div class="ticker-item"><span>Queen Kalmi Dates</span></div>
+      <div class="ticker-item"><i class="fas fa-nut"></i></div>
+      <div class="ticker-item"><span>Nutty Trail Mix</span></div>
+      <div class="ticker-item"><i class="fas fa-seedling"></i></div>
+      <!-- Duplicate -->
+      <div class="ticker-item"><span>California Almonds</span></div>
+      <div class="ticker-item"><i class="fas fa-nut"></i></div>
+      <div class="ticker-item"><span>Healthy Nutmix</span></div>
+      <div class="ticker-item"><i class="fas fa-seedling"></i></div>
+      <div class="ticker-item"><span>Black Raisins</span></div>
+      <div class="ticker-item"><i class="fas fa-nut"></i></div>
+      <div class="ticker-item"><span>California Pistachios</span></div>
+      <div class="ticker-item"><i class="fas fa-seedling"></i></div>
+      <div class="ticker-item"><span>Queen Kalmi Dates</span></div>
+      <div class="ticker-item"><i class="fas fa-nut"></i></div>
+      <div class="ticker-item"><span>Nutty Trail Mix</span></div>
+      <div class="ticker-item"><i class="fas fa-seedling"></i></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       OUR STORY
+  ═══════════════════════════════════ -->
+  <section class="story" id="story">
+    <div class="story-layout">
+      <div class="story-visual">
+        <div class="story-img-frame">
+          <img src="images/about_bg.png" alt="Premium Dry Fruits Collection" class="story-img" />
+          <div class="story-img-overlay"></div>
+        </div>
+        <div class="story-stat-cards">
+          <div class="story-stat">
+            <span class="sstat-num" data-target="15">0</span>
+            <span class="sstat-plus">+</span>
+            <span class="sstat-label">Years of Excellence</span>
+          </div>
+          <div class="story-stat">
+            <span class="sstat-num" data-target="500">0</span>
+            <span class="sstat-plus">+</span>
+            <span class="sstat-label">Happy Clients</span>
+          </div>
+          <div class="story-stat">
+            <span class="sstat-num" data-target="50">0</span>
+            <span class="sstat-plus">+</span>
+            <span class="sstat-label">Products</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-content">
+        <p class="story-overline">Our Story</p>
+        <h2 class="story-heading">
+          Rooted in Quality,<br />
+          <em>Grown with Trust</em>
+        </h2>
+        <p class="story-body">
+          Dev Enterprises — operating as <strong>Nutswala</strong> — began its journey from the bustling 
+          APMC Market in Vashi, Navi Mumbai over 15 years ago. What started as a passion for 
+          bringing the finest dry fruits to every table has grown into one of Maharashtra's 
+          most trusted wholesale dry fruit businesses.
+        </p>
+        <p class="story-body">
+          Every product we carry is hand-selected for freshness, flavour, and nutritional value. 
+          From California's almond groves to Afghanistan's raisin valleys, we bring you 
+          the world's best — at market-beating prices.
+        </p>
+        <div class="story-features">
+          <div class="sf-item">
+            <div class="sf-icon"><i class="fas fa-leaf"></i></div>
+            <div>
+              <strong>100% Natural</strong>
+              <p>No additives, no preservatives</p>
+            </div>
+          </div>
+          <div class="sf-item">
+            <div class="sf-icon"><i class="fas fa-award"></i></div>
+            <div>
+              <strong>FSSAI Certified</strong>
+              <p>All safety standards met</p>
+            </div>
+          </div>
+          <div class="sf-item">
+            <div class="sf-icon"><i class="fas fa-globe-asia"></i></div>
+            <div>
+              <strong>Global Sourcing</strong>
+              <p>USA, Afghanistan, Iran, India</p>
+            </div>
+          </div>
+          <div class="sf-item">
+            <div class="sf-icon"><i class="fas fa-boxes"></i></div>
+            <div>
+              <strong>Wholesale & Retail</strong>
+              <p>Flexible pack sizes for all</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-gold">
+          <span>Partner with Us</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CATEGORIES
+  ═══════════════════════════════════ -->
+  <section class="categories" id="categories">
+    <div class="cat-bg-text">CATEGORIES</div>
+    <div class="container">
+      <div class="sec-tag">What We Offer</div>
+      <h2 class="sec-heading">Shop by <em>Category</em></h2>
+      <div class="cat-grid">
+
+        <div class="cat-card" onclick="filterProds('nuts')" data-cat="nuts">
+          <div class="cat-card-inner">
+            <div class="cat-img-wrap">
+              <img src="images/product_almonds.png" alt="Premium Nuts" />
+              <div class="cat-img-glow"></div>
+            </div>
+            <div class="cat-number">01</div>
+            <h3>Premium Nuts</h3>
+            <p>Almonds · Pistachios · Cashews · Walnuts</p>
+            <div class="cat-link">Browse <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="filterProds('raisins')" data-cat="raisins">
+          <div class="cat-card-inner">
+            <div class="cat-img-wrap">
+              <img src="images/product_raisins.png" alt="Raisins" />
+              <div class="cat-img-glow"></div>
+            </div>
+            <div class="cat-number">02</div>
+            <h3>Raisins & Berries</h3>
+            <p>Black · Green · Sultana · Cranberry</p>
+            <div class="cat-link">Browse <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="filterProds('dates')" data-cat="dates">
+          <div class="cat-card-inner">
+            <div class="cat-img-wrap">
+              <img src="images/product_dates.png" alt="Dates" />
+              <div class="cat-img-glow"></div>
+            </div>
+            <div class="cat-number">03</div>
+            <h3>Premium Dates</h3>
+            <p>Kalmi · Medjool · Ajwa · Safawi</p>
+            <div class="cat-link">Browse <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+        <div class="cat-card" onclick="filterProds('mix')" data-cat="mix">
+          <div class="cat-card-inner">
+            <div class="cat-img-wrap">
+              <img src="images/product_nutmix.png" alt="Mixes" />
+              <div class="cat-img-glow"></div>
+            </div>
+            <div class="cat-number">04</div>
+            <h3>Nut Mixes</h3>
+            <p>Trail Mix · Nutmix · Gift Packs</p>
+            <div class="cat-link">Browse <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       PRODUCTS
+  ═══════════════════════════════════ -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="products-header">
+        <div>
+          <div class="sec-tag">Our Range</div>
+          <h2 class="sec-heading">Featured <em>Products</em></h2>
+        </div>
+        <div class="prod-filters" id="prodFilters">
+          <button class="pf-btn active" data-filter="all" onclick="filterProds('all')">All</button>
+          <button class="pf-btn" data-filter="nuts" onclick="filterProds('nuts')">Nuts</button>
+          <button class="pf-btn" data-filter="raisins" onclick="filterProds('raisins')">Raisins</button>
+          <button class="pf-btn" data-filter="dates" onclick="filterProds('dates')">Dates</button>
+          <button class="pf-btn" data-filter="mix" onclick="filterProds('mix')">Mixes</button>
+        </div>
+      </div>
+
+      <div class="prod-grid" id="prodGrid">
+
+        <!-- 1 -->
+        <div class="prod-card" data-category="nuts">
+          <div class="pc-badge">Bestseller</div>
+          <div class="pc-img">
+            <img src="images/user_almonds_nutmix.jpg" alt="California Almonds" />
+            <div class="pc-hover">
+              <button onclick="openModal('California Almonds')"><i class="fas fa-envelope-open-text"></i> Quick Enquiry</button>
+              <a href="https://wa.me/919820000000?text=Hi!+I'm+interested+in+California+Almonds" target="_blank" class="pc-wa"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <span class="pc-cat">Premium Nuts</span>
+            <h3 class="pc-name">California Almonds</h3>
+            <div class="pc-tags">
+              <span>Gluten Free</span><span>USA Origin</span><span>100% Natural</span>
+            </div>
+            <div class="pc-footer">
+              <span class="pc-price">Wholesale Pricing</span>
+              <button class="pc-btn" onclick="openModal('California Almonds')">Get Price</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="prod-card" data-category="mix">
+          <div class="pc-badge new">New Arrival</div>
+          <div class="pc-img">
+            <img src="images/user_almonds_nutmix.jpg" alt="Healthy Nutmix" />
+            <div class="pc-hover">
+              <button onclick="openModal('Healthy Nutmix')"><i class="fas fa-envelope-open-text"></i> Quick Enquiry</button>
+              <a href="https://wa.me/919820000000?text=Hi!+I'm+interested+in+Healthy+Nutmix" target="_blank" class="pc-wa"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <span class="pc-cat">Nut Mixes</span>
+            <h3 class="pc-name">Healthy Nutmix</h3>
+            <div class="pc-tags">
+              <span>High Protein</span><span>Nutritious</span><span>Zero Cholesterol</span>
+            </div>
+            <div class="pc-footer">
+              <span class="pc-price">Wholesale Pricing</span>
+              <button class="pc-btn" onclick="openModal('Healthy Nutmix')">Get Price</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="prod-card" data-category="mix">
+          <div class="pc-img">
+            <img src="images/user_almonds_trailmix.jpg" alt="Nutty Trail Mix" />
+            <div class="pc-hover">
+              <button onclick="openModal('Nutty Trail Mix')"><i class="fas fa-envelope-open-text"></i> Quick Enquiry</button>
+              <a href="https://wa.me/919820000000?text=Hi!+I'm+interested+in+Nutty+Trail+Mix" target="_blank" class="pc-wa"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <span class="pc-cat">Nut Mixes</span>
+            <h3 class="pc-name">Nutty Trail Mix</h3>
+            <div class="pc-tags">
+              <span>Raw Vegan</span><span>High Taste</span><span>Premium</span>
+            </div>
+            <div class="pc-footer">
+              <span class="pc-price">Wholesale Pricing</span>
+              <button class="pc-btn" onclick="openModal('Nutty Trail Mix')">Get Price</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="prod-card" data-category="raisins">
+          <div class="pc-badge popular">Popular</div>
+          <div class="pc-img">
+            <img src="images/user_raisins_almonds.jpg" alt="Black Raisins" />
+            <div class="pc-hover">
+              <button onclick="openModal('Black Raisins')"><i class="fas fa-envelope-open-text"></i> Quick Enquiry</button>
+              <a href="https://wa.me/919820000000?text=Hi!+I'm+interested+in+Black+Raisins" target="_blank" class="pc-wa"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <span class="pc-cat">Raisins & Berries</span>
+            <h3 class="pc-name">Black Raisins</h3>
+            <div class="pc-tags">
+              <span>Seedless</span><span>Afghan Origin</span><span>Zero Cholesterol</span>
+            </div>
+            <div class="pc-footer">
+              <span class="pc-price">Wholesale Pricing</span>
+              <button class="pc-btn" onclick="openModal('Black Raisins')">Get Price</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="prod-card" data-category="nuts">
+          <div class="pc-img">
+            <img src="images/user_raisins_pistachios.jpg" alt="California Pistachios" />
+            <div class="pc-hover">
+              <button onclick="openModal('California Pistachios')"><i class="fas fa-envelope-open-text"></i> Quick Enquiry</button>
+              <a href="https://wa.me/919820000000?text=Hi!+I'm+interested+in+California+Pistachios" target="_blank" class="pc-wa"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <span class="pc-cat">Premium Nuts</span>
+            <h3 class="pc-name">California Pistachios</h3>
+            <div class="pc-tags">
+              <span>Roasted</span><span>Pink Salt</span><span>USA Origin</span>
+            </div>
+            <div class="pc-footer">
+              <span class="pc-price">Wholesale Pricing</span>
+              <button class="pc-btn" onclick="openModal('California Pistachios')">Get Price</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="prod-card" data-category="dates">
+          <div class="pc-badge premium">Premium</div>
+          <div class="pc-img">
+            <img src="images/user_raisins_dates.jpg" alt="Queen Kalmi Dates" />
+            <div class="pc-hover">
+              <button onclick="openModal('Queen Kalmi Dates')"><i class="fas fa-envelope-open-text"></i> Quick Enquiry</button>
+              <a href="https://wa.me/919820000000?text=Hi!+I'm+interested+in+Queen+Kalmi+Dates" target="_blank" class="pc-wa"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <span class="pc-cat">Premium Dates</span>
+            <h3 class="pc-name">Queen Kalmi Dates</h3>
+            <div class="pc-tags">
+              <span>No Sugar Added</span><span>Healthy</span><span>Premium</span>
+            </div>
+            <div class="pc-footer">
+              <span class="pc-price">Wholesale Pricing</span>
+              <button class="pc-btn" onclick="openModal('Queen Kalmi Dates')">Get Price</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       WHY US  — split diagonal
+  ═══════════════════════════════════ -->
+  <section class="why" id="why">
+    <div class="why-bg-img">
+      <img src="images/hero_banner.png" alt="Background" />
+      <div class="why-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="why-header">
+        <div class="sec-tag light">Why Choose Us</div>
+        <h2 class="sec-heading light">The Nutswala <em>Advantage</em></h2>
+      </div>
+      <div class="why-grid">
+        <div class="wc-card" data-delay="0">
+          <div class="wc-num">01</div>
+          <div class="wc-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>Unmatched Quality</h3>
+          <p>Every batch rigorously inspected for freshness, moisture & purity before dispatch.</p>
+        </div>
+        <div class="wc-card" data-delay="100">
+          <div class="wc-num">02</div>
+          <div class="wc-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Direct Farm Sourcing</h3>
+          <p>We partner directly with farms in California, Afghanistan, Iran and India for best prices.</p>
+        </div>
+        <div class="wc-card" data-delay="200">
+          <div class="wc-num">03</div>
+          <div class="wc-icon"><i class="fas fa-tags"></i></div>
+          <h3>Competitive Pricing</h3>
+          <p>Being at APMC Market hub allows wholesale-best rates for both bulk & retail buyers.</p>
+        </div>
+        <div class="wc-card" data-delay="300">
+          <div class="wc-num">04</div>
+          <div class="wc-icon"><i class="fas fa-box-open"></i></div>
+          <h3>Flexible Packaging</h3>
+          <p>From retail pouches to bulk sacks — custom branding & private labelling available.</p>
+        </div>
+        <div class="wc-card" data-delay="400">
+          <div class="wc-num">05</div>
+          <div class="wc-icon"><i class="fas fa-users"></i></div>
+          <h3>15+ Years Trust</h3>
+          <p>500+ clients across retail, HoReCa, catering and corporate gifting trust Nutswala.</p>
+        </div>
+        <div class="wc-card" data-delay="500">
+          <div class="wc-num">06</div>
+          <div class="wc-icon"><i class="fas fa-headset"></i></div>
+          <h3>Dedicated Support</h3>
+          <p>Our team is always reachable via phone or WhatsApp for any product or order queries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════ -->
+  <section class="testi">
+    <div class="container">
+      <div class="sec-tag">Client Reviews</div>
+      <h2 class="sec-heading">What Our <em>Clients Say</em></h2>
+      <div class="testi-grid">
+        <div class="tc">
+          <div class="tc-quote">"</div>
+          <p>Nutswala has been our go-to supplier for over 5 years. The quality of their California Almonds is unmatched — always fresh, always on time!</p>
+          <div class="tc-author">
+            <div class="tc-av">RK</div>
+            <div><strong>Ramesh Kapoor</strong><span>Dry Fruit Retailer, Pune</span></div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+        </div>
+        <div class="tc tc-featured">
+          <div class="tc-quote">"</div>
+          <p>We source premium nutmixes from Nutswala every festive season. Exceptional quality and the best wholesale pricing in Navi Mumbai!</p>
+          <div class="tc-author">
+            <div class="tc-av">PS</div>
+            <div><strong>Priya Shah</strong><span>Corporate Gifting, Mumbai</span></div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+        </div>
+        <div class="tc">
+          <div class="tc-quote">"</div>
+          <p>The Black Raisins and Kalmi Dates from Nutswala are simply the best. Plump, seedless, and incredibly fresh. Loyal customer for 8 years!</p>
+          <div class="tc-author">
+            <div class="tc-av">AM</div>
+            <div><strong>Anita Mehta</strong><span>Bakery Owner, Thane</span></div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-split">
+        <div class="contact-left">
+          <div class="sec-tag">Find Us</div>
+          <h2 class="sec-heading">Visit &amp; <em>Connect</em></h2>
+          <p class="contact-intro">We'd love to meet you at our APMC Market shop or you can reach us through any of these channels.</p>
+          <div class="ci-list">
+            <div class="ci">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Our Address</strong>
+                <p>E18, Masala Market, APMC Phase 2,<br/>Sector 19C, Vashi, Navi Mumbai – 400703</p>
+              </div>
+            </div>
+            <div class="ci">
+              <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+919820000000">+91 98200 00000</a></p>
+              </div>
+            </div>
+            <div class="ci">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:info@nutswala.com">info@nutswala.com</a></p>
+              </div>
+            </div>
+            <div class="ci">
+              <div class="ci-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <strong>Business Hours</strong>
+                <p>Mon–Sat: 9:00 AM – 7:00 PM<br/>Sunday: 10:00 AM – 4:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="cs-btn fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="cs-btn ig"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919820000000" target="_blank" class="cs-btn wa"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:info@nutswala.com" class="cs-btn em"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4!2d73.0!3d19.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3a0f5f5a7e7%3A0x1234567890!2sAPMC+Market%2C+Vashi!5e0!3m2!1sen!2sin!4v1234567890"
+              allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Nutswala APMC Market Location">
+            </iframe>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="cf-card">
+            <div class="cf-header">
+              <h3>Send an Enquiry</h3>
+              <p>Fill the form and we'll get back within 24 hours</p>
+            </div>
+            <form id="contactForm" onsubmit="handleForm(event)">
+              <div class="cf-row">
+                <div class="cf-group">
+                  <label>Name <span>*</span></label>
+                  <input type="text" id="cf-name" placeholder="Your full name" required />
+                </div>
+                <div class="cf-group">
+                  <label>Phone <span>*</span></label>
+                  <input type="tel" id="cf-phone" placeholder="+91 XXXXX XXXXX" required />
+                </div>
+              </div>
+              <div class="cf-group">
+                <label>Email</label>
+                <input type="email" id="cf-email" placeholder="your@email.com" />
+              </div>
+              <div class="cf-group">
+                <label>Product of Interest</label>
+                <select id="cf-product">
+                  <option value="">-- Select Product --</option>
+                  <option>California Almonds</option>
+                  <option>Healthy Nutmix</option>
+                  <option>Nutty Trail Mix</option>
+                  <option>Black Raisins</option>
+                  <option>California Pistachios</option>
+                  <option>Queen Kalmi Dates</option>
+                  <option>Multiple Products</option>
+                </select>
+              </div>
+              <div class="cf-group">
+                <label>Message <span>*</span></label>
+                <textarea id="cf-msg" rows="4" placeholder="Tell us about your requirements — quantity, pack size, location..." required></textarea>
+              </div>
+              <button type="submit" class="btn-gold full-btn" id="cfSubmit">
+                <span>Send Message</span><i class="fas fa-paper-plane"></i>
+              </button>
+              <div class="cf-success" id="cfSuccess" style="display:none">
+                <i class="fas fa-check-circle"></i> Thank you! We'll respond within 24 hours.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-inner">
+        <div class="ft-brand">
+          <div class="ft-logo">
+            <img src="images/nutswala_logo.png" alt="Nutswala" class="ft-logo-img" />
+            <div>
+              <span class="ft-name">Nutswala</span>
+              <span class="ft-sub">Dev Enterprises</span>
+            </div>
+          </div>
+          <p class="ft-desc">Premium quality dry fruits and nuts from the heart of APMC Market, Vashi, Navi Mumbai. Trusted by 500+ businesses since 2009.</p>
+          <div class="ft-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919820000000" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:info@nutswala.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="ft-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#products">California Almonds</a></li>
+            <li><a href="#products">Healthy Nutmix</a></li>
+            <li><a href="#products">Nutty Trail Mix</a></li>
+            <li><a href="#products">Black Raisins</a></li>
+            <li><a href="#products">California Pistachios</a></li>
+            <li><a href="#products">Queen Kalmi Dates</a></li>
+          </ul>
+        </div>
+        <div class="ft-col ft-contact-col">
+          <h4>Contact</h4>
+          <div class="ft-ci">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>E18, Masala Market, APMC Phase 2, Sector 19C, Vashi, Navi Mumbai – 400703</span>
+          </div>
+          <div class="ft-ci">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+919820000000">+91 98200 00000</a>
+          </div>
+          <div class="ft-ci">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@nutswala.com">info@nutswala.com</a>
+          </div>
+          <div class="ft-ci">
+            <i class="fas fa-clock"></i>
+            <span>Mon–Sat: 9AM–7PM · Sun: 10AM–4PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Nutswala (Dev Enterprises). All rights reserved.</span>
+      <span class="ft-tagline">Premium Quality · Trusted Since 2009 · APMC Market, Vashi</span>
+    </div>
+  </footer>
+
+  <!-- ENQUIRY MODAL -->
+  <div class="modal-bg" id="modalBg" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-x" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-emoji">🥜</div>
+      <h3 class="modal-title">Quick Enquiry</h3>
+      <p class="modal-sub">Interested in <strong id="modalProd"></strong>? Let's talk!</p>
+      <form onsubmit="handleModal(event)" class="modal-form">
+        <input type="text" placeholder="Your Name *" required />
+        <input type="tel" placeholder="Phone Number *" required />
+        <input type="number" placeholder="Quantity (kg)" min="1" />
+        <button type="submit" class="btn-gold full-btn">
+          <i class="fab fa-whatsapp"></i><span>Send via WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SCROLL TOP -->
+  <button class="stb" id="stb" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/919820000000?text=Hello+Nutswala!+I'm+interested+in+your+products." 
+     class="wa-fab" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <div class="wa-pulse"></div>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
